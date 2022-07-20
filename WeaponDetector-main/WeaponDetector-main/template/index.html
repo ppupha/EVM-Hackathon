@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WeaponDetector by SPALMALO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/css/general.css" />
+	</head>
+	<body onload="addRec([['Test1', 10, 10, 200, 200],['Test2, 50, 50, 200, 200],])">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="logo">SPALMALO</a>
+					<nav id="nav">
+						<a href="/">HOME</a>
+						<a href="#demo">DEMO</a>
+						<a href="#credits">CREDITS</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>WEAPON DETECTOR</h1>
+				<p>SAFEY IS OUR MISSION.</p>
+			</section>
+
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<div class="image fit">
+                                <img src="/static/images/pic04.jpeg" alt="">
+                            </div>
+							<header>
+								<h3>Что такое Big Data: характеристики, классификация, примеры</h3>
+							</header>
+							<footer>
+								<a href="https://neurohive.io/ru/osnovy-data-science/big-data/" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+                                <img src="/static/images/pic05.png" alt="" >
+                            </div>
+							<header>
+								<h3> Как устроена рекомендательная система постов в Instagram</h3>
+							</header>
+							<footer>
+								<a href="https://neurohive.io/ru/novosti/kak-ustroena-rekomendatelnaya-sistema-postov-v-instagram/" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+                                <img src="/static/images/pic06.jpeg" alt="" >
+                            </div>
+							<header>
+								<h3>Green AI: 
+									как обучить искусственный интелект без вреда окружающей среде</h3>
+							</header>
+							<footer>
+								<a href="https://neurohive.io/ru/novosti/green-ai-kak-obuchat-nejroseti-bez-vreda-okruzhajushhej-srede/" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- demo -->
+			<section id="demo" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>DEMO</h2>
+						<p>DEMO VERSION OF OUR PROJECT</p>
+					</header>
+					<div class="flex flex-4">
+						<div class="inner" style="position: relative">
+							<video id="video" width="640" height="480" autoplay></video>
+							<div style="position: absolute; top:0px; left:0px; width:640px; height: 480px"><div id="overlay" width="640" height="480"></div></div>
+							<canvas id="canvas" style="display: none;" width="640" height="480"></canvas>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+		<!--TECHNOLOGY-->
+			<section id="three" class="wrapper">
+				<div class="spotlight">
+					<div class="image flush"><img src="/static/images/pic01.jpg" alt="" /></div>
+					<div class="inner">
+						<h3>Faster R-CNN</h3>
+						<p>Faster R-CNN – это улучшенный Fast R-CNN.
+							Архитектура Faster R-CNN образована следующим образом: Изображение подается на вход сверточной нейронной сети. 
+							Так, формируется карта признаков. Карта признаков обрабатывается слоем RPN(собственный метод локализации объекта). 
+							Здесь скользящее окно проходится по карте признаков. Центр скользящего окна связан с центром якорей. 
+							Якоря — это области, имеющие разные соотношения сторон и разные размеры. На основе метрики IoF (intersection-over-union), степени пересечения якорей и истинных размеченных прямоугольников, выносится решение о текущем регионе — есть объект или нет.
+							</p>
+						<p>
+							Далее используется алгоритм FastCNN: карта признаков с полученными объектами передаются слою RoI (Region of Interest — область интересов) с последующей обработкой полносвязных слоев и классификацией.
+                            Модель Faster R-CNN справляется немного хуже с локализацией, но работает быстрее Fast R-CNN.
+
+						</p>
+					</div>
+				</div>
+				<div class="spotlight alt">
+					<div class="image flush"><img src="/static/images/pic03.jpeg" alt="" /></div>
+					<div class="inner">
+						<h3>YOYO</h3>
+						<p>Очень популярная на текущий момент архитектура CNN, которая используется для распознавания множественных объектов на изображении.</p>
+						<p> Главная особенность этой архитектуры по сравнению с другими состоит в том, что большинство систем применяют CNN несколько раз к разным регионам изображения, в YOLO CNN применяется один раз ко всему изображению сразу. 
+							Сеть делит изображение на своеобразную сетку и предсказывает bounding boxes и вероятности того, что там есть искомый объект для каждого участка.</p>
+						<p>Плюсы данного подхода состоит в том, что сеть смотрит на все изображение сразу и учитывает контекст при детектировании и распознавании объекта. 
+							Так же YOLO в 1000 раз быстрее чем R-CNN и около 100x быстрее чем Fast R-CNN. 
+						</p>>
+					</div>
+				</div>
+				<div class="spotlight">
+					<div class="image flush"><img src="/static/images/pic02.png" alt="" /></div>
+					<div  class="inner">
+						<h3>Mask R-CNN</h3>
+						<p>Одна из первых архитектур современной нейросети для сегментации объектов на изображениях.</p>
+						<p>
+							Главной особенностью этой архитектуры является способность выделять на фотографиях четкие контуры или же маски экземпляров разных объектов, даже если они имеют различный размер и частично перекрываются. 
+							Mask R-CNN развивает архитектуру Faster R-CNN путём добавления ещё одной ветки, которая предсказывает положение маски, покрывающей найденный объект, и, таким образом решает уже задачу instance segmentation. 
+							Маска представляет собой просто прямоугольную матрицу, в которой 1 на некоторой позиции означает принадлежность соответствующего пикселя объекту заданного класса, 0 — что пиксель объекту не принадлежит.
+						</p>
+						<p>Из плюсов из этой архитектуры является большая точность, способность дообучения, способность распозновать большое количество объектов.
+							К минусам можно отнести долгое время обучения, тяжелые для загрузки модели, долгое время отклика.
+						</p>
+						
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+						<div class="copyright">
+							&copy; NOETIC INC 
+						</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.min.js"></script>
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/skel.min.js"></script>
+			<script src="./static/js/main.js"></script>
+            <script src="../static/js/main.js"></script>
+            
+            </script>
+	</body>
+</html>
